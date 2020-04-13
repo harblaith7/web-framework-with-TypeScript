@@ -1,7 +1,5 @@
 import {User} from "./Models/User"
 
-const user = new User({id: 1})
+const user = new User({name: "Matteo Sis", age: 23})
 
-user.fetch()
-
-console.log(user)
+user.save()

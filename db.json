@@ -1,9 +1,9 @@
 {
   "users": [
     {
-      "name": "Laith Harb",
-      "age": 23,
-      "id": 1
+      "id": 1,
+      "name": "Morgan Whitelaw",
+      "age": 23
     },
     {
       "name": "Laith Harb",
@@ -11,19 +11,9 @@
       "id": 2
     },
     {
-      "name": "Laith Harb",
+      "name": "Matteo Sis",
       "age": 23,
       "id": 3
-    },
-    {
-      "name": "Laith Harb",
-      "age": 23,
-      "id": 4
-    },
-    {
-      "name": "Laith Harb",
-      "age": 23,
-      "id": 5
     }
   ]
 }

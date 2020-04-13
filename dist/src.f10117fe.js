@@ -1937,6 +1937,14 @@ function () {
     });
   };
 
+  User.prototype.save = function () {
+    if (this.get("id")) {
+      axios_1.default.put("http://localhost:3000/users/" + this.get('id'), this.data);
+    } else {
+      axios_1.default.post("http://localhost:3000/users", this.data);
+    }
+  };
+
   return User;
 }();
 
@@ -1951,10 +1959,10 @@ Object.defineProperty(exports, "__esModule", {
 var User_1 = require("./Models/User");
 
 var user = new User_1.User({
-  id: 1
+  name: "Matteo Sis",
+  age: 23
 });
-user.fetch();
-console.log(user);
+user.save();
 },{"./Models/User":"src/Models/User.ts"}],"../../../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
