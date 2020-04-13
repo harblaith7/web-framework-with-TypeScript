@@ -7,4 +7,8 @@ const user = new User({
 })
 
 
+user.set({name: "Shelby Boell"})
+
+
 console.log(user.get('name'))
+console.log(user.get('age'))
