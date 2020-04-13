@@ -7,8 +7,9 @@ const user = new User({
 })
 
 
-user.set({name: "Shelby Boell"})
+user.on('change', () => {})
+user.on('click', () => {})
+user.on('change', () => {})
 
 
-console.log(user.get('name'))
-console.log(user.get('age'))
+console.log(user)
