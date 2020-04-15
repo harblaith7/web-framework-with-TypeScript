@@ -1,14 +1,9 @@
-import {Collection} from "./Models/Collection"
-import {User, UserProps} from "./Models/User"
+import {UserForm} from "./Views/UserForm"
 
 
-const collection = new Collection<User, UserProps>(
-    "http://localhost:3000/users",
-    (json: UserProps) => User.buildUser(json)
+const userForm = new UserForm(
+    document.getElementById("root")
 )
 
-collection.on("change", () => {
-    console.log(collection)
-})
 
-collection.fetch()
+userForm.render()
